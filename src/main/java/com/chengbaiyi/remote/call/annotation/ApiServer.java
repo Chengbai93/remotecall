@@ -1,13 +1,15 @@
 package com.chengbaiyi.remote.call.annotation;
 
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import com.chengbaiyi.remote.call.config.ApiServerCondition;
+import org.springframework.context.annotation.Conditional;
+
+import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
+@Documented
+@Conditional(ApiServerCondition.class)
 public @interface ApiServer {
 
     String domain() default "";

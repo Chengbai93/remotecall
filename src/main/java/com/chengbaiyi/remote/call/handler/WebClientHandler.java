@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
@@ -17,7 +16,7 @@ import reactor.core.publisher.Mono;
  * @description: TODO
  * @date 2019/3/12 16:52
  */
-public class WebClientRestHandler implements RestHandler {
+public class WebClientHandler implements RestHandler {
 
     private WebClient webClient;
 
