@@ -9,11 +9,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @author: xudongsheng
  * @date: 2019/3/15 15:14
  */
-@ConfigurationProperties(prefix = "chengbaiyi")
+@ConfigurationProperties(prefix = "chengbaiyi.rest")
 public class RestHandlerProperties {
 
     private static final String REST_HANDLER = "webclient";
-
 
     private String restHandler = REST_HANDLER;
 
