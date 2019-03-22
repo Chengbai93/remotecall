@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.chengbaiyi.remote.call.config.RestHandlerConfig
+com.chengbaiyi.remote.call.config.RestHandlerConfig,\
+com.chengbaiyi.remote.call.config.ProxyConfig
